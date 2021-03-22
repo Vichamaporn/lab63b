@@ -21,6 +21,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - ไปที่ตัวอย่างที่ 1
     - พิมพ์ cd 01_Serial Monitor
     - พิมพ์ vi src/main.cpp
+ 
 ![image](https://user-images.githubusercontent.com/80879966/112020191-b84c5c00-8b62-11eb-8190-184a47487422.jpg)
 
 
