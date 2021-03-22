@@ -9,7 +9,7 @@
 2. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
 
 ## แหล่งข้อมูลเพื่อการศึกษา
-แหล่งข้อมูล : https://www.youtube.com/watch?v=NLIUsWLEpmg
+https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
