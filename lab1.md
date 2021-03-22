@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 4. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
 - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
-  - ![image](https://imgur.com/a/SHqlKye.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112017744-7a4e3880-8b60-11eb-9d62-d455c2da3f9c.jpg)
   - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
   - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
   -  delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
