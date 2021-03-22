@@ -8,7 +8,9 @@
 1. microcontroll
 
 
-## ศึกษาข้อมูลเบื้องต้น (แหล่งข้อมูลเพื่อการศึกษา)
+## แหล่งข้อมูลเพื่อการศึกษา
+- https://www.youtube.com/watch?v=CCnN1WJsXQY
+- https://www.youtube.com/watch?v=6JnhaUILGuw
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 
