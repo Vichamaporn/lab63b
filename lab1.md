@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 5.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
-- 
+
 ![image](https://user-images.githubusercontent.com/80879966/112023078-7b359900-8b65-11eb-89bb-9c9c617811b9.jpg)
 
   - platform แสดงถึง บริษัทผู้ผลิต
@@ -47,7 +47,17 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - upload_port แสดงถึง portที่ใช้ติดต่อ 
     - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
 
+6.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+- พิมพ์ pio run -t upload
+- ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
+  - กดปุ่มดำ เพื่อทำให้เกิดการโหลด 
+  - กดอีกปุ่ม เพื่อให้เกิดการset
 
+![image](https://user-images.githubusercontent.com/80879966/112024929-41659200-8b67-11eb-8684-a86257d30a28.jpg)
+
+  อัพโหลดเข้า microcontroller เสร็จสิ้น
+
+![image](https://user-images.githubusercontent.com/80879966/112025795-1b8cbd00-8b68-11eb-89e9-aa61561284e4.jpg)
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 ## คำถามหลังการทดลอง (พร้อมตัวอย่างคำตอบ)
