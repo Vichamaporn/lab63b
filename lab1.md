@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
+
 ![image](https://user-images.githubusercontent.com/80879966/112019858-6dcadf80-8b62-11eb-8370-cc9b002280f5.jpg)
 
 2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
@@ -28,7 +29,9 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 4. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
 - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
+
 ![image](https://user-images.githubusercontent.com/80879966/112018447-22fc9800-8b61-11eb-8b13-7a4f831e9a25.jpg)
+
   - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
   - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
   -  delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
