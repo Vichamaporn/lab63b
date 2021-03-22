@@ -17,6 +17,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
 - พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
 - แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
+![image](https://user-images.githubusercontent.com/80879966/112018933-91415a80-8b61-11eb-9d17-4655f4b138d6.jpg)
 
 3. ไปที่ตัวอย่างที่ 1
 - พิมพ์ cd 01_Serial Monitor
