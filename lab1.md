@@ -23,11 +23,10 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - ไปที่ตัวอย่างที่ 1
     - พิมพ์ cd 01_Serial Monitor
     - พิมพ์ vi src/main.cpp
- 
-![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
 
+![image](https://user-images.githubusercontent.com/80879966/112027725-0a44b000-8b6a-11eb-89d6-69a81fd87226.jpg)
 
-4. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
+3. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
 - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
   - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
@@ -36,7 +35,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
 
-5.เข้าไปที่ configuration file ใน program
+4.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
 
 ![image](https://user-images.githubusercontent.com/80879966/112023078-7b359900-8b65-11eb-89bb-9c9c617811b9.jpg)
@@ -47,7 +46,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - upload_port แสดงถึง portที่ใช้ติดต่อ 
     - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
 
-6.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+5.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
 - พิมพ์ pio run -t upload
 - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
   - กดปุ่มดำ เพื่อทำให้เกิดการโหลด 
