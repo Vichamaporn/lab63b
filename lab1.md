@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
   - delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
 
-![image](https://user-images.githubusercontent.com/80879966/112018447-22fc9800-8b61-11eb-8b13-7a4f831e9a25.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
 
 5.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
