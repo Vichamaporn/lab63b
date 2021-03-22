@@ -36,7 +36,16 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112018447-22fc9800-8b61-11eb-8b13-7a4f831e9a25.jpg)
 
-5.
+5.เข้าไปที่ configuration file ใน program
+- พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
+- 
+![image](https://user-images.githubusercontent.com/80879966/112023078-7b359900-8b65-11eb-89bb-9c9c617811b9.jpg)
+
+  - platform แสดงถึง บริษัทผู้ผลิต
+  - board แสดงถึง ชื่อบอร์ด
+  - framwork แสดงถึง วิธีการเขียนโปรแกรม
+  - upload_port แสดงถึง portที่ใช้ติดต่อ 
+    - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
 
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
