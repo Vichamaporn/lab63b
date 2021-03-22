@@ -13,15 +13,16 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
+![image](https://user-images.githubusercontent.com/80879966/112019858-6dcadf80-8b62-11eb-8370-cc9b002280f5.jpg)
 
 2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
 - พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
 - แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
-![image](https://user-images.githubusercontent.com/80879966/112018933-91415a80-8b61-11eb-9d17-4655f4b138d6.jpg)
-
-3. ไปที่ตัวอย่างที่ 1
+  - ไปที่ตัวอย่างที่ 1
 - พิมพ์ cd 01_Serial Monitor
 - พิมพ์ vi src/main.cpp
+![image](https://user-images.githubusercontent.com/80879966/112020191-b84c5c00-8b62-11eb-8190-184a47487422.jpg)
+
 
 4. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
