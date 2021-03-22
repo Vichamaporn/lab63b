@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
     - พิมพ์ cd 01_Serial Monitor
     - พิมพ์ vi src/main.cpp
  
-![image](https://user-images.githubusercontent.com/80879966/112020191-b84c5c00-8b62-11eb-8190-184a47487422.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
 
 
 4. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
