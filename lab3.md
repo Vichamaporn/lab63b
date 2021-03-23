@@ -29,7 +29,7 @@
     
 ![image](https://user-images.githubusercontent.com/80879942/112137666-1e88bb80-8c03-11eb-866b-b516ad5036b6.jpg)
 
-3. ดู source code program 
+4. ดู source code program 
 - พิมพ์ vi src/main.cpp
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
 - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
@@ -65,21 +65,23 @@ void loop()
 }
 ```
 
-4. อัพโหลดโปรแกรม 03_Output-Port เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+5. อัพโหลดโปรแกรม 03_Output-Port เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
    - พิมพ์ pio run -t upload
    - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
      - กดปุ่มสีแดง เพื่อให้เกิดการ reset
      
 ![image](https://user-images.githubusercontent.com/80879942/112140260-5e9d6d80-8c06-11eb-9a5d-70b1e3322553.jpg)
 
- 
    - สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
      - พิมพ์ pio device monitor
 
-5. จากนั้น นำ microcontroller ต่อเข้ากับ Relay เพื่อให้ Relay ทำหน้าที่เปิด-ปิดสวิตซ์ แล้วนำแหล่งจ่ายไฟมาต่อเข้ากับตัว Relay เพื่อจ่ายไฟให้ Relay ทำงานได้
-6. เมื่อต่อ microcontroller เข้ากับ Relay การทำงานของ Relay จะทำให้เกิดการเปิด-ปิด สวิตซ์ ดังภาพ
-   
+6. นำ microcontroller ต่อเข้ากับ Relay เพื่อให้ Relay ทำหน้าที่เปิด-ปิดสวิตซ์ 
+
 ![image](https://user-images.githubusercontent.com/80879942/112144123-5eec3780-8c0b-11eb-94d0-840e7917e15a.jpg)
+
+8. นำแหล่งจ่ายไฟมาต่อเข้ากับตัว Relay เพื่อจ่ายไฟให้ Relay ทำงานได้
+   
+![image](https://user-images.githubusercontent.com/80879966/112169029-69ff9180-8c24-11eb-82cb-c5d9968e9d20.jpg)
 
 ## การบันทึกผลการทดลอง 
 - ก่อนทำการต่อ Relay
@@ -90,9 +92,6 @@ count | ลักษณะสีของหลอดไฟ
 เลขคี่ | สีเขียวจะติดดับๆสลับกัน
 เลขคู่ | ไฟสีน้ำเงินจะไม่ติด
  
-![image](https://user-images.githubusercontent.com/80879942/112142078-ba68f600-8c08-11eb-97b0-456029f00641.jpg)
-   
-
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 
