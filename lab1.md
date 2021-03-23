@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112023078-7b359900-8b65-11eb-89bb-9c9c617811b9.jpg)
 
-  - platform แสดงถึง บริษัทผู้ผลิต
+  - platform แสดงถึง เทคโนโลยีของบริษัทผู้ผลิต
   - board แสดงถึง ชื่อบอร์ด
   - framwork แสดงถึง วิธีการเขียนโปรแกรม
   - upload_port แสดงถึง portที่ใช้ติดต่อ 
@@ -49,8 +49,8 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 5.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
 - พิมพ์ pio run -t upload
 - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
-  - กดปุ่มดำ เพื่อทำให้เกิดการโหลด 
-  - กดอีกปุ่ม เพื่อให้เกิดการset
+  - กดปุ่มสีดำ เพื่อทำให้เกิดการโหลด 
+  - กดปุ่มสีแดง เพื่อให้เกิดการreset
 
 ![image](https://user-images.githubusercontent.com/80879966/112024929-41659200-8b67-11eb-8684-a86257d30a28.jpg)
 
@@ -58,6 +58,20 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112025795-1b8cbd00-8b68-11eb-89e9-aa61561284e4.jpg)
 
+- สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
+  - พิมพ์ pio device monitor
+    - PATTANI แสดงถึง ตัวแปรcountที่ถูกimplimentทีละ1,2,3ไปเรื่อยๆ โดยแสดงผลทุก 1 วินาที
+
+![image](https://user-images.githubusercontent.com/80879966/112079578-038e5b00-8bb3-11eb-9a51-9aeab6db344d.jpg)
+
+    - หลังกดปุ่มสีแดง เพื่อresetโปรแกรม  โดยโปรแกรมจะหยุดทำงานและเริ่มนับ 1 ใหม่
+
+![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
+
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
+
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
+- platformio นั้น สามารถใช้เขียนโปรแกรมจาก microcontroller หลายชนิดที่มีบริษัทต่างกันได้
+- คำสั่ง platformio.ini เป็นเหมือนตัวแสดงผลว่าการเขียนโปรแกรมครั้งนี้เราจะเขียนให้กับmicrocontrollerตัวไหน
+- 
 ## คำถามหลังการทดลอง (พร้อมตัวอย่างคำตอบ)
