@@ -50,9 +50,11 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
   
   - ปล่อยสายไฟเส้นสีขาวออกจาก ช่องที่มีสายสีดำ output เปลี่ยนกลับเป็น 0 ดังภาพ
 
-![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112142170-d2407a00-8c08-11eb-83be-0229bed41902.jpg)
 
   - จิ้มที่เส้นสีแดง หรือ HIGH(on) out put ที่ได้หลังจิ้มสายสีขาวจะเป็น 1 ดังภาพ
+ 
+ ![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
   
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
