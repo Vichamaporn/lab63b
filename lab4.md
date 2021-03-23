@@ -59,8 +59,6 @@ void loop()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/80879966/112081407-2ff7a680-8bb6-11eb-8f2c-0da37291d882.jpg)
-
 4. อัพโหลดโปรแกรมเข้าไปใน microcontroller
  - พิมพ์ pio run -t upload
  - ทำการกดปุ่มสีดำ เพื่อให้ทำการอัพโหลดได้
