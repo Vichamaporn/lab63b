@@ -63,22 +63,34 @@ void loop()
 	delay(500);
 }
 ```
-  ![image](https://user-images.githubusercontent.com/80879942/112139226-1c276100-8c05-11eb-9b71-6711fb943ae2.jpg)
 
 4. อัพโหลดโปรแกรม 03_Output-Port เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
    - พิมพ์ pio run -t upload
    - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
      - กดปุ่มสีแดง เพื่อให้เกิดการ reset
      
-  ![image](https://user-images.githubusercontent.com/80879942/112140260-5e9d6d80-8c06-11eb-9a5d-70b1e3322553.jpg)
+![image](https://user-images.githubusercontent.com/80879942/112140260-5e9d6d80-8c06-11eb-9a5d-70b1e3322553.jpg)
 
  
-## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+   - สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
+     - พิมพ์ pio device monitor
 
+5. จากนั้น นำ microcontroller ต่อเข้ากับ Relay เพื่อให้ Relay ทำหน้าที่เปิด-ปิดสวิตซ์ แล้วนำแหล่งจ่ายไฟมาต่อเข้ากับตัว Relay เพื่อจ่ายไฟให้ Relay ทำงานได้
+
+## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
+- ก่อนทำการต่อ Relay
+**ผลลัพธ์ออกมาเป็น on off สลับกันไปเรื่อยๆ**
+
+หลอดไฟ | Second Header
+------------ | -------------
+หลอด LED เปล่งแสง | สีเขียวจะติดดับๆสลับกัน
+หลอด LED เปล่งแสง | ไฟสีน้ำเงินจะไม่ติด
+ 
+![image](https://user-images.githubusercontent.com/80879942/112142078-ba68f600-8c08-11eb-97b0-456029f00641.jpg)
+   
+**เมื่อต่อ microcontroller เข้ากับ Relay การทำงานของ Relay จะทำให้เกิดการเปิด-ปิด สวิตซ์ ดังภาพ**
+   
+![image](https://user-images.githubusercontent.com/80879942/112144123-5eec3780-8c0b-11eb-94d0-840e7917e15a.jpg)
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 
