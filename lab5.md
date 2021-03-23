@@ -1,19 +1,29 @@
 # การทดลองที่ 5 การเขียนโปรแกรมเชื่อมต่อไวไฟและเว็บเซอร์เวอร์
 
 ## วัตถุประสงค์ (อธิบายเป็นข้อๆ)
-1. เพื่อ
-2. เพือ่
-
+1. เพื่อเข้าใจการเขียนโปรแกรมเชื่อมต่อไวไฟและเว็บเซอร์เวอร์
 
 ## อุปกรณ์ที่ใช้ (รายการอุปกรณ์)
-1. microcontroller
-
+1. CPU
+2. microcontroller ESP-01
+3. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
+4. wifi ที่ต้องการเชื่อมกับ microcontroller
 
 ## แหล่งข้อมูลเพื่อการศึกษา
 https://www.youtube.com/watch?v=VX-QNQcO-b4
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
-1. เริ่มจาก
+1. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
+- พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
+- แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
+  - ไปที่ตัวอย่างที่ 5
+    - พิมพ์ cd 05_Wifi-Web-Server
+2. ดู source code program โดยจะแสดงเป็นสองส่วน
+- พิมพ์ vi src/main.cpp
+- โปรแกรมนี้เป็นการเชื่อมต่อ wifi จึงต้องใส่ชื่อ wifi และ password
+- set up เป็นการเชื่อมต่อ wifi ที่เราใส่ชื่อตอนแรก
+  - set up webserver แสดงผลเป็น
+  - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
 
 ```javascript
 #include <ESP8266WiFi.h>
@@ -59,17 +69,30 @@ void loop(void){
 }
 ```
 
+3. อัพโหลดโปรแกรม 05_Wifi-Web-Server เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+   - พิมพ์ pio run -t upload
+   
+4. ทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
+
+![image](https://user-images.githubusercontent.com/80879942/112162477-ac25d480-8c1e-11eb-8915-8e6e6ded0e1e.jpg)
+
+   - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
+     - กดปุ่มสีแดง เพื่อให้เกิดการ reset 
+
+   - สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
+     - พิมพ์ pio device monitor 
+     - ผลลัพธ์ที่แสดง คือ ip address
+     - copy ip adress ไปที่บราวเซอร์สำหรับทดสอบ
+     
 ## การบันทึกผลการทดลอง 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+การใช้คำสั่ง pio device monitor เพื่อดูผลลัพธ์ของการรันโปรแกรมในไมโครคอนโทรเลอร์ ได้แสดง ip address และเมื่อคัดลอก ip address ไปที่บราวเซอร์ก็จะขึ้น Hello 1 โดย cnt ก็จะเปลี่ยนตัวแปรไปเรื่อยๆ
 
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
+pio run -t upload นั้นใช้ในการอัพโหลดข้อมูลจาก 05_Wifi-Web-Server ไปยัง microcontroller โดยคำสั่ง pio device monitor ที่ใช้ดูผลลัพธ์ของโปรแกรมที่ถูกอัพโหลดเข้าไป 
+ซึ่งในที่นี้คือ ip address แล้วจึงทำการคัดลอกเพื่อไปที่บราวเซอร์สำหรับทดสอบ
 
 ## คำถามหลังการทดลอง 
-คำถาม
-- [ ] คำตอบผิด
-- [x] คำตอบถูก
-
+จากโค้ดของโปรแกรมดังกล่าว ข้อใดคือชื่อของwifi
+- [ ] const char* password
+- [x] const char* ssid
