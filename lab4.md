@@ -35,23 +35,24 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
  - เมื่อโปรแกรมถูกอัพโหลดเสร็จสิ้น โปรแกรมจะทำงานโดยการตรวจสอบที่ port 0 ว่ามี input มาหรือไม่
     - ถ้า input เป็น 1 ไฟจะติดที่ port 2
     - ถ้า input เป็น 0 ไฟจะไม่ติด
-    - 
+     
 ![image](https://user-images.githubusercontent.com/80879966/112139035-d8345c00-8c04-11eb-8b8b-cbdebca7f3c4.jpg)
 
   - พิมพ์ pio device monitor
     - ค่าที่อ่านได้เป็น 1 ตลอด ดังภาพ
 
-    ![image](https://user-images.githubusercontent.com/80879966/112141149-86410580-8c07-11eb-8024-c3718b21e5cb.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112141149-86410580-8c07-11eb-8024-c3718b21e5cb.jpg)
 
 - สายไฟเส้นสีขาว คือ port 0 ถ้าเอาสายไฟเส้นนี้ไปจิ้มจะมีค่าเป็น 0 Volt
   - นำสายไฟเส้นสีขาว จิ้มกับช่องที่มีสายสีดำเสียบอยู่ output จะเปลี่ยนเป็น 0 ดังภาพ
   
-  ![image](https://user-images.githubusercontent.com/80879966/112141033-627dbf80-8c07-11eb-9f18-1935c708200e.jpg)
+![image](https://user-images.githubusercontent.com/80879966/112141033-627dbf80-8c07-11eb-9f18-1935c708200e.jpg)
   
   - ปล่อยสายไฟเส้นสีขาวออกจาก ช่องที่มีสายสีดำ output เปลี่ยนกลับเป็น 0 ดังภาพ
 
-  ![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
-  
+![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
+
+  - จิ้มที่เส้นสีแดง หรือ HIGH(on) out put ที่ได้หลังจิ้มสายสีขาวจะเป็น 1 ดังภาพ
   
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
