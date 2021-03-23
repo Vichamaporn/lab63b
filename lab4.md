@@ -6,8 +6,10 @@
 
 
 ## อุปกรณ์ที่ใช้ (รายการอุปกรณ์)
-1. microcontroller
-
+1. LED
+2. adapter
+3. microcontroller
+4. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
 
 ## แหล่งข้อมูลเพื่อการศึกษา
 https://www.youtube.com/watch?v=nFqoZT26U5k
@@ -31,6 +33,11 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 
 2. อัพโหลดโปรแกรมเข้าไปใน microcontroller
  - พิมพ์ pio run -t upload
+ - ทำการกดปุ่มสีดำ เพื่อให้ทำการอัพโหลดได้
+ - เมื่อโปรแกรมถูกอัพโหลดเสร็จสิ้น โปรแกรมจะทำงานโดยการตรวจสอบที่ port 0 ว่ามี input มาหรือไม่
+    - ถ้า input เป็น 1 ไฟจะติดที่ port 2
+    - ถ้า input เป็น 0 ไฟจะไม่ติด
+
 
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
