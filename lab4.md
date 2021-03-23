@@ -1,7 +1,7 @@
 # การทดลองที่ 4 การเขียนโปรแกรมอินพุทสัญญาณดิจิทัล
 
 ## วัตถุประสงค์ (อธิบายเป็นข้อๆ)
-1. เพื่อ
+1. เพื่อนำสัญญาณinputจากภายนอกเข้ามายังภายใน microcontroller
 2. เพื่อ
 
 
@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 1. ดู source code program โดยจะแสดงเป็นสองส่วน
 - พิมพ์ vi src/main.cpp
   - ส่วน set up
-    - set up ให้ port ที่มี 2 อัน
+    - set up ให้ io port ที่มี 2 อัน
       - port 0 เป็น input
       - port 2 เป็น output
   - ส่วน loop
