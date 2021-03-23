@@ -24,8 +24,6 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
     - พิมพ์ cd 01_Serial Monitor
     - พิมพ์ vi src/main.cpp
 
-![image](https://user-images.githubusercontent.com/80879966/112027725-0a44b000-8b6a-11eb-89d6-69a81fd87226.jpg)
-
 3. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
 - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
 - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
