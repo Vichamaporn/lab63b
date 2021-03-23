@@ -20,6 +20,11 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
   - ส่วน loop
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
+
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 
