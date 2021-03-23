@@ -56,7 +56,25 @@ void loop()
 4.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
 
-![image](https://user-images.githubusercontent.com/80879966/112023078-7b359900-8b65-11eb-89bb-9c9c617811b9.jpg)
+```javascript
+; IOT for KIDS
+;
+; By Dr.Choompol Boonmee
+; 
+
+[env:exercise01]
+platform = espressif8266
+board = esp01_1m
+framework = arduino
+board_build.flash_mode = dout
+
+upload_port = /dev/cu.usbserial-1420
+;upload_port = COM3
+
+monitor_port = /dev/cu.usbserial-1420
+;monitor_port = COM3
+monitor_speed = 115200
+```
 
   - platform แสดงถึง เทคโนโลยีของบริษัทผู้ผลิต
   - board แสดงถึง ชื่อบอร์ด
