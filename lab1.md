@@ -68,8 +68,8 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
 
-## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
-1. การ
+## การบันทึกผลการทดลอง +ตัวอย่าง
+  การอัพโหลดโปรแกรมเข้าไปยัง microcontroller ทำโดยผ่านคำสั่ง upload และใช้การกดปุ่มบริเวณภายนอกของ microcontroller หากต้องการโหลดหรือรีเซ็ต
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 - platformio นั้น สามารถใช้เขียนโปรแกรมจาก microcontroller หลายชนิดที่มีบริษัทต่างกันได้
