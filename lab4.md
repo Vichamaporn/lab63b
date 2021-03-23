@@ -17,9 +17,12 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 - พิมพ์ vi src/main.cpp
   - ส่วน set up
     - set up ให้ io port ที่มี 2 อัน
-      - port 0 เป็น input
-      - port 2 เป็น output
+      - port 0 (สายสีขาว) เป็น input
+      - port 2 (สายสีเหลือง) เป็น output
   - ส่วน loop
+    - digitalRead() หมายถึง การอ่านข้อมูลจาก port ซึ่งในตัวอย่างหมายถึง port 0
+    - ข้อมูลที่แสดงนั้นเป็นข้อมูล digital ซึ่งมีแค่ค่า 0 หรือ 1
+      - 
  
 ![image](https://user-images.githubusercontent.com/80879966/112081407-2ff7a680-8bb6-11eb-8f2c-0da37291d882.jpg)
 
