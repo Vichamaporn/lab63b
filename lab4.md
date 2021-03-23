@@ -2,13 +2,12 @@
 
 ## วัตถุประสงค์ (อธิบายเป็นข้อๆ)
 1. เพื่อนำสัญญาณinputจากภายนอกเข้ามายังภายใน microcontroller
-2. เพื่อ
-
+2. เพื่อให้เข้าใจการทำงานของสัญญาณ output ที่จะเกิดขึ้น
 
 ## อุปกรณ์ที่ใช้ (รายการอุปกรณ์)
-1. LED
-2. adapter
-3. microcontroller
+1. adapter
+2. หลอด LED เปล่งแสง
+3. microcontroller ESP-01
 4. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
 
 ## แหล่งข้อมูลเพื่อการศึกษา
@@ -56,6 +55,7 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
  
  ![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
   
+  microcontroller ESP-01 ตามปกติเราจะกดที่ปุ่มสีดำที่ต้องกดตอนโปรแกรมที่ผ่านมา
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
