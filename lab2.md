@@ -58,15 +58,22 @@ void loop()
 	Serial.println("\n\n");
 }
 ```
+
 4. อัพโหลดโปรแกรม 02_Scan-Wifi เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
    - พิมพ์ pio run -t upload
 
 ![image](https://user-images.githubusercontent.com/80879678/112092429-0c3e5b80-8bca-11eb-9138-49a05fa33128.jpg)
 
    - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
-     - กดปุ่มสีดำ เพื่อทำให้เกิดการ load 
      - กดปุ่มสีแดง เพื่อให้เกิดการ reset
 
+![image](https://user-images.githubusercontent.com/80879678/112092578-62ab9a00-8bca-11eb-853f-540fc48be65c.jpg)
+
+
+   - สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
+     - พิมพ์ pio device monitor
+  
+![image](https://user-images.githubusercontent.com/80879678/112092640-8242c280-8bca-11eb-8907-0a1be8c000f2.jpg)
  
  
 ## การบันทึกผลการทดลอง 
