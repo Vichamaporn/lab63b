@@ -14,7 +14,13 @@
 https://www.youtube.com/watch?v=nFqoZT26U5k
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
-1. ดู source code program โดยจะแสดงเป็นสองส่วน
+1. ทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
+2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
+- พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
+- แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
+  - ไปที่ตัวอย่างที่ 4
+    - พิมพ์ cd 04_Input-port
+3. ดู source code program โดยจะแสดงเป็นสองส่วน
 - พิมพ์ vi src/main.cpp
   - ส่วน set up
     - set up ให้ io port ที่มี 2 อัน
@@ -28,7 +34,7 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
  
 ![image](https://user-images.githubusercontent.com/80879966/112081407-2ff7a680-8bb6-11eb-8f2c-0da37291d882.jpg)
 
-2. อัพโหลดโปรแกรมเข้าไปใน microcontroller
+4. อัพโหลดโปรแกรมเข้าไปใน microcontroller
  - พิมพ์ pio run -t upload
  - ทำการกดปุ่มสีดำ เพื่อให้ทำการอัพโหลดได้
  - เมื่อโปรแกรมถูกอัพโหลดเสร็จสิ้น โปรแกรมจะทำงานโดยการตรวจสอบที่ port 0 ว่ามี input มาหรือไม่
@@ -61,7 +67,8 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 
 ![image](https://user-images.githubusercontent.com/80879966/112144869-3dd81680-8c0c-11eb-908e-643573ce9f53.jpg)
 
-ต่อกับsensorแสง
+5. ต่อกับsensorแสง
+6. 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
