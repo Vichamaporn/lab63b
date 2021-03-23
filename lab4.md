@@ -16,8 +16,12 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 1. ดู source code program โดยจะแสดงเป็นสองส่วน
 - พิมพ์ vi src/main.cpp
   - ส่วน set up
-    - set up ให้ port อยู่ที่
+    - set up ให้ port ที่มี 2 อัน
+      - port 0 เป็น input
+      - port 2 เป็น output
   - ส่วน loop
+ 
+![image](https://user-images.githubusercontent.com/80879966/112081407-2ff7a680-8bb6-11eb-8f2c-0da37291d882.jpg)
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
