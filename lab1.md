@@ -51,8 +51,6 @@ void loop()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
-
 4.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
 
