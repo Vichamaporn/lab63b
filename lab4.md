@@ -55,7 +55,16 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
  
  ![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
   
-  microcontroller ESP-01 ตามปกติเราจะกดที่ปุ่มสีดำที่ต้องกดตอนโปรแกรมที่ผ่านมา
+  microcontroller ESP-01 ตามปกติเราจะกดที่ปุ่มสีดำที่ต้องกดตอนโปรแกรมที่ผ่านมา ซึ่งในการทดลองนี้ปุ่มสีดำได้ต่ออยู่กับ port 0 
+  - เมื่อลองกดที่ปุ่มสีด ำค่าที่ได้ออกมาจะมีค่าเช่นเดียวกับการกดport 0 ส่งผลให้ไฟติดดังภาพ
+
+![image](https://user-images.githubusercontent.com/80879966/112144832-3add2600-8c0c-11eb-86ea-446ec0fa337f.jpg)
+
+  - เมื่อปล่อยมือจากปุ่มสีดำ ไฟจะดับ และค่าที่อ่านได้เป็น 1 ดังภาพ
+
+![image](https://user-images.githubusercontent.com/80879966/112144869-3dd81680-8c0c-11eb-908e-643573ce9f53.jpg)
+
+ต่อกับsensorแสง
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
