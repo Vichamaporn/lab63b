@@ -63,7 +63,16 @@ void loop()
 	delay(500);
 }
 ```
+  ![image](https://user-images.githubusercontent.com/80879942/112139226-1c276100-8c05-11eb-9b71-6711fb943ae2.jpg)
 
+4. อัพโหลดโปรแกรม 03_Output-Port เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+   - พิมพ์ pio run -t upload
+   - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
+     - กดปุ่มสีแดง เพื่อให้เกิดการ reset
+     
+  ![image](https://user-images.githubusercontent.com/80879942/112140260-5e9d6d80-8c06-11eb-9a5d-70b1e3322553.jpg)
+
+ 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
