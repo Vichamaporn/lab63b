@@ -1,7 +1,8 @@
 # การทดลองที่ 2 การเขียนโปรแกรมค้นหาไวไฟ
 
 ## วัตถุประสงค์ 
-1. เพื่อรันโปรแกรมบน microcontroller ในการค้นหา wifi
+1. เพื่อเข้าใจวิธีการเขียนโปรแกรมค้นหา wifi
+2. เพื่อรันโปรแกรมบน microcontroller ในการค้นหา wifi
 
 ## อุปกรณ์ที่ใช้ 
 1. CPU
@@ -13,13 +14,14 @@
 https://www.youtube.com/watch?v=yBjab0UNuB8
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
-
-1. เสียบไมโครคอนโทรลเลอร์ใน USB to serealพอร์ต
-2. อัปโหลดโปรแกรมโดยรันคำสั่ง upload image
-3. กดปุ่มอัปโหลด
-4. กดปุ่มรีเซ็ต image
-5. เมื่อuploadครบ100%
-  - พิมพ์ pio device monitor image
+1. ทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
+2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
+- พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
+- แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
+  - ไปที่ตัวอย่างที่ 2
+    - พิมพ์ cd 02_Scan-Wifi
+3. ดู source code program 
+- พิมพ์ vi src/main.cpp
 
 ```javascript
 #include <Arduino.h>
@@ -56,7 +58,17 @@ void loop()
 	Serial.println("\n\n");
 }
 ```
+4. อัพโหลดโปรแกรม 02_Scan-Wifi เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+   - พิมพ์ pio run -t upload
 
+![image](https://user-images.githubusercontent.com/80879678/112092429-0c3e5b80-8bca-11eb-9138-49a05fa33128.jpg)
+
+   - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
+     - กดปุ่มสีดำ เพื่อทำให้เกิดการ load 
+     - กดปุ่มสีแดง เพื่อให้เกิดการ reset
+
+ 
+ 
 ## การบันทึกผลการทดลอง 
 First Header | Second Header
 ------------ | -------------
