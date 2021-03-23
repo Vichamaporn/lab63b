@@ -31,7 +31,34 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
       - หากค่าที่อ่านได้ เป็น 1 ให้ LOW ไปที่ port 2 (หากเป็นหลอดไฟหมายถึงไฟดับ)
       - หากค่าที่อ่านได้ เป็น 0 ให้ HIGH ไปที่ port 2 (หากเป็นหลอดไฟหมายถึงไฟติด)
     โดยในที่นี้หมายความว่า port 0 เป็นตัวควบคุมสัญญาณ input ให้ไฟเปิด หรือ ปิด
- 
+    
+```javascript
+#include <Arduino.h>
+#include <ESP8266WiFi.h>
+
+int cnt = 0;
+
+void setup()
+{
+ Serial.begin(115200);
+ pinMode(0, INPUT);
+ pinMode(2, OUTPUT);
+ Serial.println("\n\n\n");
+}
+
+void loop()
+{
+ int val = digitalRead(0);
+ Serial.printf("======= read %d\n", val);
+ if(val==1) {
+  digitalWrite(2, LOW);
+ } else {
+  digitalWrite(2, HIGH);
+ }
+ delay(100);
+}
+```
+
 ![image](https://user-images.githubusercontent.com/80879966/112081407-2ff7a680-8bb6-11eb-8f2c-0da37291d882.jpg)
 
 4. อัพโหลดโปรแกรมเข้าไปใน microcontroller
