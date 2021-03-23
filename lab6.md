@@ -60,8 +60,15 @@ void loop(void){
 © 2021 GitHub, Inc.
 ```
 
-## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
+## การบันทึกผลการทดลอง 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 
-## คำถามหลังการทดลอง (พร้อมตัวอย่างคำตอบ)
+## คำถามหลังการทดลอง 
+คำถาม
+- [x] คำตอบถูก
+- [ ] คำตอบผิด
