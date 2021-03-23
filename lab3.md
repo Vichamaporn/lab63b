@@ -18,7 +18,7 @@
 - https://www.youtube.com/watch?v=CCnN1WJsXQY
 - https://www.youtube.com/watch?v=6JnhaUILGuw
 
-## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
+## วิธีการทำการทดลอง 
 1. นำ adapter(ต่อกับLED) ต่อเข้ากับ USB 
 2. ทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
 3. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
