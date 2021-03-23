@@ -41,9 +41,20 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
 ![image](https://user-images.githubusercontent.com/80879966/112139035-d8345c00-8c04-11eb-8b8b-cbdebca7f3c4.jpg)
 
   - พิมพ์ pio device monitor
+    - ค่าที่อ่านได้เป็น 1 ตลอด ดังภาพ
+
+    ![image](https://user-images.githubusercontent.com/80879966/112141149-86410580-8c07-11eb-8024-c3718b21e5cb.jpg)
 
 - สายไฟเส้นสีขาว คือ port 0 ถ้าเอาสายไฟเส้นนี้ไปจิ้มจะมีค่าเป็น 0 Volt
-- 
+  - นำสายไฟเส้นสีขาว ไปจิ้มท่มีสายสีดำเสียบอยู่ output เปลี่ยนเป็น 0 ดังภาพ
+  
+  ![image](https://user-images.githubusercontent.com/80879966/112141033-627dbf80-8c07-11eb-9f18-1935c708200e.jpg)
+  
+  - ปล่อยสายไฟเส้นสีขาวออกจาก ช่องที่มีสายสีดำ output เปลี่ยนกลับเป็น 0 ดังภาพ
+
+  ![image](https://user-images.githubusercontent.com/80879966/112141044-6578b000-8c07-11eb-80e1-2394077dc14e.jpg)
+  
+  
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
