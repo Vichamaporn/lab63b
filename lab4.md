@@ -95,7 +95,9 @@ void loop()
 ![image](https://user-images.githubusercontent.com/80879966/112144869-3dd81680-8c0c-11eb-908e-643573ce9f53.jpg)
 
 5. ต่อกับsensorแสง
-6. 
+
+![image](https://user-images.githubusercontent.com/80879966/112153543-f2c30100-8c15-11eb-815a-4ae3df03f124.jpg)
+7. 
 ## การบันทึกผลการทดลอง 
 First Header | ค่าที่อ่านได้
 ------------ | -------------
