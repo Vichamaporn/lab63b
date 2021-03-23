@@ -11,7 +11,7 @@
 ## แหล่งข้อมูลเพื่อการศึกษา
 https://www.youtube.com/watch?v=NLIUsWLEpmg
 
-## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
+## วิธีการทำการทดลอง
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
 
 (จากซ้ายไปขวา microcontroller ESP-01, อุปกรณ์เชื่อมต่อ USB และ การเสียบเข้าทาง serial port ตามลำดับ)
@@ -69,6 +69,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 ![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
+##### การ
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 - platformio นั้น สามารถใช้เขียนโปรแกรมจาก microcontroller หลายชนิดที่มีบริษัทต่างกันได้
