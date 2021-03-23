@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112024929-41659200-8b67-11eb-8684-a86257d30a28.jpg)
 
-  อัพโหลดเข้า microcontroller เสร็จสิ้น
+- อัพโหลดเข้า microcontroller เสร็จสิ้น
 
 ![image](https://user-images.githubusercontent.com/80879966/112025795-1b8cbd00-8b68-11eb-89e9-aa61561284e4.jpg)
 
