@@ -64,7 +64,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 
 ![image](https://user-images.githubusercontent.com/80879966/112079578-038e5b00-8bb3-11eb-9a51-9aeab6db344d.jpg)
 
-    - หลังกดปุ่มสีแดง เพื่อresetโปรแกรม  โดยโปรแกรมจะหยุดทำงานและเริ่มนับ 1 ใหม่
+   - กดปุ่มสีแดง เพื่อทำการresetโปรแกรม  โดยโปรแกรมจะหยุดทำงานและเริ่มนับ 1 ใหม่
 
 ![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
 
