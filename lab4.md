@@ -13,6 +13,11 @@
 https://www.youtube.com/watch?v=nFqoZT26U5k
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
+1. ดู source code program โดยจะแสดงเป็นสองส่วน
+- พิมพ์ vi src/main.cpp
+  - ส่วน set up
+    - set up ให้ port อยู่ที่
+  - ส่วน loop
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 
