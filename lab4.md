@@ -37,9 +37,13 @@ https://www.youtube.com/watch?v=nFqoZT26U5k
  - เมื่อโปรแกรมถูกอัพโหลดเสร็จสิ้น โปรแกรมจะทำงานโดยการตรวจสอบที่ port 0 ว่ามี input มาหรือไม่
     - ถ้า input เป็น 1 ไฟจะติดที่ port 2
     - ถ้า input เป็น 0 ไฟจะไม่ติด
+    - 
+![image](https://user-images.githubusercontent.com/80879966/112139035-d8345c00-8c04-11eb-8b8b-cbdebca7f3c4.jpg)
 
+  - พิมพ์ pio device monitor
 
-
+- สายไฟเส้นสีขาว คือ port 0 ถ้าเอาสายไฟเส้นนี้ไปจิ้มจะมีค่าเป็น 0 Volt
+- 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
 First Header | Second Header
 ------------ | -------------
