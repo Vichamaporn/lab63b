@@ -32,6 +32,24 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
   - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
   - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
   - delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
+ 
+```javascript
+#include <Arduino.h>
+
+int cnt = 0;
+
+void setup()
+{
+	Serial.begin(115200);
+}
+
+void loop()
+{
+	cnt++;
+	Serial.printf("PATTANI :%d\n",cnt);
+	delay(1000);
+}
+```
 
 ![image](https://user-images.githubusercontent.com/80879966/112027096-72df5d00-8b69-11eb-9673-d481aa1b012b.jpg)
 
