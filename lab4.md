@@ -8,7 +8,7 @@
 ## อุปกรณ์ที่ใช้ 
 1. CPU
 2. adapter
-3. sensor แสง
+3. sensorแสง
 4. หลอด LED เปล่งแสง
 5. microcontroller ESP-01
 6. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
@@ -100,8 +100,7 @@ void loop()
 - ขาถัดมา ต่อกับ resistor เข้าไปต่อกับ port 0(ต่อภายหลัง)
 - อีกขา ต่อกับเส้นสีดำ หรือ ground
 
-**โดยสัญญาณที่อยู่ตรงกลางคือสัญญาณจาก sensor ถ้ามีแสงสว่างเข้ามาจะเป็น 0  มีค่าใกล้  0 Volt**
-
+(ภาพแสดงการต่อขาของ sensorแสง เข้ากับ CPU)
 ![image](https://user-images.githubusercontent.com/80879966/112153543-f2c30100-8c15-11eb-815a-4ae3df03f124.jpg)
 
 - นำ input เส้นสีขาวต่อกับ sensor 
@@ -115,10 +114,10 @@ void loop()
 
 ## การบันทึกผลการทดลอง 
 - ก่อนทำการ
-First Header | ค่าที่อ่านได้
------------- | -------------
-Content cell 1 | Content cell 2
-Content column 1 | Content column 2
+คำสั่งที่ป้อน | ค่าที่อ่านได้ | ค่าที่อ่านได้
+------------ | ------------- | -------------
+pio device monitor | Content cell 2 | Content cell 2
+Content column 1 | Content column 2 | Content column 2
 
 First Header | Second Header
 ------------ | -------------
