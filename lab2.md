@@ -14,6 +14,13 @@ https://www.youtube.com/watch?v=yBjab0UNuB8
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 
+1.เสียบไมโครคอนโทรลเลอร์ใน USB to serealพอร์ต
+2.อัปโหลดโปรแกรมโดยรันคำสั่ง upload image
+3.กดปุ่มอัปโหลด
+4.กดปุ่มรีเซ็ต image
+5.เมื่อuploadครบ100%
+  - พิมพ์ pio device monitor image
+
 ```javascript
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -57,7 +64,8 @@ Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
 
-## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
+## อภิปรายผลการทดลอง
+จากการทดลองสามารถค้นหาwifiที่มีสัญญาณอยู่บริเวณนั้นๆได้
 
 ## คำถามหลังการทดลอง 
 คำถาม
