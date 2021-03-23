@@ -14,11 +14,11 @@ https://www.youtube.com/watch?v=yBjab0UNuB8
 
 ## วิธีการทำการทดลอง (ทำเป็นขั้นตอนพร้อมภาพประกอบ)
 
-1.เสียบไมโครคอนโทรลเลอร์ใน USB to serealพอร์ต
-2.อัปโหลดโปรแกรมโดยรันคำสั่ง upload image
-3.กดปุ่มอัปโหลด
-4.กดปุ่มรีเซ็ต image
-5.เมื่อuploadครบ100%
+1. เสียบไมโครคอนโทรลเลอร์ใน USB to serealพอร์ต
+2. อัปโหลดโปรแกรมโดยรันคำสั่ง upload image
+3. กดปุ่มอัปโหลด
+4. กดปุ่มรีเซ็ต image
+5. เมื่อuploadครบ100%
   - พิมพ์ pio device monitor image
 
 ```javascript
