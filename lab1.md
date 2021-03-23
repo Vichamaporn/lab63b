@@ -49,7 +49,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 5.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
 - พิมพ์ pio run -t upload
 - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
-  - กดปุ่มสีดำ เพื่อทำให้เกิดการโหลด 
+  - กดปุ่มสีดำ เพื่อทำให้เกิดการload 
   - กดปุ่มสีแดง เพื่อให้เกิดการreset
 
 ![image](https://user-images.githubusercontent.com/80879966/112024929-41659200-8b67-11eb-8684-a86257d30a28.jpg)
@@ -69,10 +69,15 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 ![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
 
 ## การบันทึกผลการทดลอง (พร้อมตัวอย่าง)
-##### การ
+1. การ
 
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
 - platformio นั้น สามารถใช้เขียนโปรแกรมจาก microcontroller หลายชนิดที่มีบริษัทต่างกันได้
 - คำสั่ง platformio.ini เป็นเหมือนตัวแสดงผลว่าการเขียนโปรแกรมครั้งนี้เราจะเขียนให้กับmicrocontrollerตัวไหน
 - 
 ## คำถามหลังการทดลอง (พร้อมตัวอย่างคำตอบ)
+1. หากต้องการให้โปรแกรมเริ่มนับใหม่อีกครั้ง ปุ่มใดบนmicrocontrollerที่สามารถใช้ได้
+- [ ] ปุ่มสีดำ เพื่อให้เกิดการloadโปรแกรม
+- [x] ปุ่มสีแดง เพื่อทำการresetโปรแกรม
+
+2.
