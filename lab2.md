@@ -82,7 +82,7 @@ void loop()
 ![image](https://user-images.githubusercontent.com/80879678/112092782-ca61e500-8bca-11eb-94f7-4198a18f1636.jpg)
 
 ## อภิปรายผลการทดลอง
-   pio run -t upload นั้นใช้ในการอัพโหลดข้อมูลจาก 02_Scan-Wifi ไปยัง microcontroller โดยคำสั่ง pio device monitor ที่ใช้ดูผลลัพ์ของโปรแกรมที่ถูกอัพโหลดเข้าไป 
+   pio run -t upload นั้นใช้ในการอัพโหลดข้อมูลจาก 02_Scan-Wifi ไปยัง microcontroller โดยคำสั่ง pio device monitor ที่ใช้ดูผลลัพธ์ของโปรแกรมที่ถูกอัพโหลดเข้าไป 
    ส่งผลทำให้เราสามารถสังเกตถึงชื่อและจำนวนของ wifi ที่ถูกพบภายในบริเวณดังกล่าวได้
 
 ## คำถามหลังการทดลอง 
