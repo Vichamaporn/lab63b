@@ -65,19 +65,18 @@ void loop()
 ![image](https://user-images.githubusercontent.com/80879678/112092429-0c3e5b80-8bca-11eb-9138-49a05fa33128.jpg)
 
    - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
+     - กดปุ่มสีดำ เพื่อทำให้เกิดการ load 
      - กดปุ่มสีแดง เพื่อให้เกิดการ reset
 
 ![image](https://user-images.githubusercontent.com/80879678/112092578-62ab9a00-8bca-11eb-853f-540fc48be65c.jpg)
-
 
    - สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
      - พิมพ์ pio device monitor
   
 ![image](https://user-images.githubusercontent.com/80879678/112092640-8242c280-8bca-11eb-8907-0a1be8c000f2.jpg)
  
- 
 ## การบันทึกผลการทดลอง 
-   หลังจากหน้าจอแสดงผลลัพธ์ การวนลูปจะเริ่มต้นขึ้น และเริ่มการค้นหา wifi ภายในบริเวณดังกล่าว ดังภาพ 
+   หลังจากหน้าจอแสดงผลลัพธ์ การวนลูปจะเริ่มต้นขึ้น และเริ่มการค้นหา wifi ภายในบริเวณดังกล่าว และแสดงผล ดังภาพ 
    
 ![image](https://user-images.githubusercontent.com/80879678/112092782-ca61e500-8bca-11eb-94f7-4198a18f1636.jpg)
 
