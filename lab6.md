@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=T26DVHePlTs
 - แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
   - ไปที่ตัวอย่างที่ 6
     - พิมพ์ cd 06_Wifi-AP-Web-Server
-3. ดู source code program โดยจะแสดงเป็นสองส่วน
+3. ดู source code program 
 - พิมพ์ vi src/main.cpp
 
 ```javascript
@@ -64,23 +64,25 @@ void loop(void){
   server.handleClient();
 }
 ```
-4. กำหนด ชื่อ และ ตั้งpassword
+โดยโค้ดดังกล่าว ประกอบด้วยข้อมูลดังนี้
+
+- กำหนด ชื่อ และ ตั้งpassword
 
 ![image](https://user-images.githubusercontent.com/80879678/112093962-ea92a380-8bcc-11eb-8b5d-9c367a3b9449.jpg)
 
-5. กำหนด IPAdress, gateway, subnet
+- กำหนด IPAdress, gateway, subnet
 
 ![image](https://user-images.githubusercontent.com/80879678/112094552-13676880-8bce-11eb-840f-558fcd636b35.jpg)
 
-6. เตรียม web server
+- เตรียม web server
 
 ![image](https://user-images.githubusercontent.com/80879678/112094082-32192f80-8bcd-11eb-9905-b37362433e7a.jpg)
 
-7.รันคำสั่ง softAP แล้วกำหนด ssiad กับ password
+- รันคำสั่ง softAP แล้วกำหนด ssiad กับ password
 
 ![image](https://user-images.githubusercontent.com/80879678/112094155-537a1b80-8bcd-11eb-9f3f-7429cc1003ca.jpg)
 
-8.อัปโหลดโปรแกรม 06_Wifi-AP-Web-Server เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+4. อัปโหลดโปรแกรม 06_Wifi-AP-Web-Server เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
   - พิมพ์ pio run -t upload
 
 ![image](https://user-images.githubusercontent.com/80879678/112094212-6ee52680-8bcd-11eb-963f-b78ec3414b97.jpg)
@@ -90,23 +92,22 @@ void loop(void){
  
 ![image](https://user-images.githubusercontent.com/80879678/112094256-88866e00-8bcd-11eb-8bab-dc64b6cff485.jpg)
 
-9. ตรวจสอบว่า wifi ที่สร้างขึ้นนั้นแสดงผลหรือยัง 
+5. ตรวจสอบว่า wifi ที่สร้างขึ้นนั้นแสดงผลหรือยัง 
     - พิมพ์ pio device monitor
 
 ![image](https://user-images.githubusercontent.com/80879678/112094298-9cca6b00-8bcd-11eb-84ab-2dc865285aca.jpg)
 
-10. ใช้โทรศัพท์โทรศัพท์มือถือค้นหา wifi
+6. ใช้โทรศัพท์โทรศัพท์มือถือค้นหา wifi
 
 ## การบันทึกผลการทดลอง 
    คำสั่ง pio device monitor ใช้ในการดูผลลัพธ์ของการรันโปรแกรมใน microcontroller ซึ่งแดสงผลออกมาว่า ver started และ ตรวจสอบการแสดงผลของ wifi โดยทดลองค้นหาด้วยโทรศัพท์มือถือ ทำให้พบกับ wifi 
 
-
 ## อภิปรายผลการทดลอง (พร้อมตัวอย่าง)
-   เราสามารถสร้าง Wifi Access Point ขึ้นมาเองได้ และมีอยู่จริง ดังภาพ
+   จากการทดลองดังกล่าว โปรแกรม 06_Wifi-AP-Web-Server ทำให้เราสามารถสร้าง Wifi Access Point ขึ้นมาเองได้ และตรวจสอบพบว่ามีอยู่จริง ดังภาพ
    
 ![image](https://user-images.githubusercontent.com/80879678/112094339-ad7ae100-8bcd-11eb-98da-a0eb09f63ef6.jpg)
 
 ## คำถามหลังการทดลอง 
-หากทำตามขั้นตอนดังกล่าว จะสามารถสร้างWifi Access Pointได้เอง
+หากทำตามขั้นตอนดังกล่าว จะสามารถสร้าง Wifi Access Point ได้เอง
 - [x] ใช่
 - [ ] ไม่ใช่
