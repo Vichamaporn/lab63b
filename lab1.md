@@ -1,8 +1,9 @@
 # การทดลองที่ 1 การเขียนโปรแกรมเพื่อรันบนไมโครคอนโทรเลอร์
 
 ## วัตถุประสงค์
-1. เพื่อศึกษาองค์ประกอบ หน้าที่ ของ microcontroller
-2. เพื่อการเขียนและรันโปรแกรมจาก microcontroller
+1. เพื่อเข้าใจคำสั่งต่างๆของโค้ดโปรแกรมที่ใช้รัน
+2. เพื่อศึกษาองค์ประกอบ ข้อมูลพื้นฐานของ microcontroller
+3. เพื่อการเขียนและรันโปรแกรมจาก microcontroller
 
 ## อุปกรณ์ที่ใช้
 1. microcontroller ESP-01 ที่ประกอบไปด้วย CPU เสาอากาศสำหรับ WIFI
@@ -15,6 +16,7 @@ https://www.youtube.com/watch?v=NLIUsWLEpmg
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
 
 (จากซ้ายไปขวา microcontroller ESP-01, อุปกรณ์เชื่อมต่อ USB และ การเสียบเข้าทาง serial port ตามลำดับ)
+
 ![image](https://user-images.githubusercontent.com/80879966/112019858-6dcadf80-8b62-11eb-8370-cc9b002280f5.jpg)
 
 2. ดูที่ตัวอย่างโปรแกรม ที่โฟลเดอร์ pattani
