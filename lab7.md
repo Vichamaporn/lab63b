@@ -1,23 +1,31 @@
-# การทดลองที่ 7 
+# การทดลองที่ 7 การประยุกต์ใช้เซนเซอร์ควบคุมการค้นหาไวไฟแอคเซสพอยต์
 
 ## วัตถุประสงค์
-1. เพื่อเข้าใจ
-2. เพื่อศึกษา
-3. เพื่อการเขียน
+1. เพื่อเข้าใจเกี่ยวกับโครงสร้างของ code program และปรับแต่ง
+3. เพื่อคิดค้นการทำงานที่จะใช้ผ่าน microcontroller รูปแบบใหม่
+4. เพื่อทำการประยุกต์ใช้ความรู้ที่ศึกษาจากข้อมูลที่ได้ศึกษาจากทุกแลป
 
 ## อุปกรณ์ที่ใช้
 1. CPU
 2. adapter
 3. sensorแสง
-4. หลอด LED เปล่งแสง
-5. microcontroller ESP-01
-6. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
-7. wifi ที่ต้องการเชื่อมกับ microcontroller
+4. microcontroller ESP-01
+5. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
+6. wifi ที่ต้องการเชื่อมกับ microcontroller
 
 ## แหล่งข้อมูลเพื่อการศึกษา
 - หาที่อยู่ IP adress 
   - https://www.sony.co.th/th/electronics/support/articles/00022321
   - ![image](https://user-images.githubusercontent.com/80879966/112862419-f0621a80-90df-11eb-8075-2d66230fb73b.jpg)
+- คลิปวิดิโอจากแลปต่างๆ
+  - แลป 1 https://www.youtube.com/watch?v=NLIUsWLEpmg
+  - แลป 2 https://www.youtube.com/watch?v=yBjab0UNuB8
+  - แลป 3 https://www.youtube.com/watch?v=CCnN1WJsXQY และ https://www.youtube.com/watch?v=6JnhaUILGuw
+  - แลป 4 https://www.youtube.com/watch?v=nFqoZT26U5k
+  - แลป 5 https://www.youtube.com/watch?v=VX-QNQcO-b4
+  - แลป 6 https://www.youtube.com/watch?v=T26DVHePlTs
+- source code จากอาจารย์
+  - https://github.com/choompol-boonmee/lab63b/tree/master/examples
 
 ## วิธีการทำการทดลอง
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
@@ -35,17 +43,26 @@
 
 3. ดู source code program 
 - พิมพ์ vi src/main.cpp
-  - const char* ssid = "EELAB-0058"; บรรทัดนี้ หมายถึง ชื่อ wifi
-  - const char* password = "vichamaporn"; บรรทัดนี้ หมายถึง รหัสผ่าน wifi
-  - IPAddress local_ip(172, 20, 10, 14); บรรทัดนี้ หมายถึง IP address
-  - IPAddress gateway(172, 20, 10, 1); บรรทัดนี้ หมายถึง Default gateway
-  - IPAddress subnet(255, 255, 255, 244); บรรทัดนี้ หมายถึง Subnet Mask
-  - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
-  - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
-  - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
-  - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
-  - delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
-  - 
+- โดยข้อมูลเบื้องต้นของ code มีความหมายดังนี้
+  - const char* ssid หมายถึง ชื่อ wifi
+  - const char* password หมายถึง รหัสผ่าน wifi
+  - IPAddress local_ip หมายถึง IP address หรือ Network address
+  - IPAddress gateway หมายถึง Default gateway
+  - IPAddress subnet หมายถึง Subnet Mask
+ - ส่วนของ set up
+   - Serial.beginset up หมายถึง การ set up serial port ที่ความเร็ว 115200
+   - set up ให้ io port มี 2 อัน
+      - pinMode บรรทัดแรก หมายถึง port 0 (สายสีขาว) เป็น input
+      - pinMode บรรทัดถัดมา หมายถึง port 2 (สายสีเหลือง) เป็น output
+   - WiFi.softAP หมายถึง การรันคำสั่ง softAP และกำหนด ssiad, password
+   - delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
+ - ส่วนของ loop
+   - digitalRead() หมายถึง การอ่านข้อมูลจาก port ซึ่งในตัวอย่างหมายถึง port 1 (ข้อมูลที่อ่านได้เป็นข้อมูล digital ซึ่งมีแค่ค่า 0 หรือ 1)
+      - หากค่าที่อ่านได้ เป็น 1 ให้ HIGH ไปที่ port 2 (หากเป็นหลอดไฟหมายถึงไฟติด)
+      - หากค่าที่อ่านได้ เป็น 0 ให้ LOW ไปที่ port 2 (หากเป็นหลอดไฟหมายถึงไฟดับ)
+    โดยในที่นี้หมายความว่า port 0 เป็นตัวควบคุมสัญญาณ input ให้ไฟเปิด หรือ ปิด
+   - delay(2000) หมายถึง ช่วงเวลา 2000 ms หรือ 2 วินาที
+    
 ```javascript
 #include <ESP8266WiFi.h>
 //#include <WiFiClient.h>
@@ -64,20 +81,25 @@ int cnt = 0;
 
 void setup(void){
 	Serial.begin(115200);
+	
+	pinMode(0, INPUT);
+ 	pinMode(2, OUTPUT);
+ 	Serial.println("\n\n\n");
+	
+		WiFi.softAP(ssid, password);
+		WiFi.softAPConfig(local_ip, gateway, subnet);
+		delay(1000);
 
-	WiFi.softAP(ssid, password);
-	WiFi.softAPConfig(local_ip, gateway, subnet);
-	delay(1000);
-
-	server.onNotFound([]() {
-		server.send(404, "text/plain", "ERROR! Path Not Found");
+		server.onNotFound([]() {
+			server.send(404, "text/plain", "ERROR! Path Not Found");
 	});
 
-	server.on("/", []() {
-		cnt++;
-		String msg = "Hello cnt: ";
-		msg += cnt;
-		server.send(200, "text/plain", msg);
+		server.on("/", []() {
+			cnt++;
+			String msg = "Hello cnt: ";
+			msg += cnt;
+			server.send(200, "text/plain", msg);
+	
 	});
 
 	server.begin();
@@ -85,11 +107,25 @@ void setup(void){
 }
 
 void loop(void){
-  server.handleClient();
+int val = digitalRead(1);
+ Serial.printf("======= read %d\n", val);
+ if(val==1) {
+  digitalWrite(2, HIGH);
+ } else {
+  digitalWrite(2, LOW);
+ }
+ delay(2000);
+ server.handleClient();
 }
 ```
+
 4.เข้าไปที่ configuration file ใน program
 - พิมพ์ vi platformio.ini เพื่อแสดงข้อมูล
+  - platform แสดงถึง เทคโนโลยีของบริษัทผู้ผลิต
+  - board แสดงถึง ชื่อบอร์ด
+  - framwork แสดงถึง วิธีการเขียนโปรแกรม
+  - upload_port แสดงถึง portที่ใช้ติดต่อ 
+    - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
 
 ```javascript
 ; IOT for KIDS
@@ -111,43 +147,24 @@ monitor_port = /dev/cu.usbserial-1420
 monitor_speed = 115200
 ```
 
-  - platform แสดงถึง เทคโนโลยีของบริษัทผู้ผลิต
-  - board แสดงถึง ชื่อบอร์ด
-  - framwork แสดงถึง วิธีการเขียนโปรแกรม
-  - upload_port แสดงถึง portที่ใช้ติดต่อ 
-    - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
-
 5.อัพโหลดโปรแกรม 07_Sensor-wifi เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
 - พิมพ์ pio run -t upload
 - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
   - กดปุ่มสีดำ เพื่อทำให้เกิดการ load 
   - กดปุ่มสีแดง เพื่อให้เกิดการ reset
-
-![image](https://user-images.githubusercontent.com/80879966/112024929-41659200-8b67-11eb-8684-a86257d30a28.jpg)
-
-- อัพโหลดเข้า microcontroller เสร็จสิ้น
-
-![image](https://user-images.githubusercontent.com/80879966/112025795-1b8cbd00-8b68-11eb-89e9-aa61561284e4.jpg)
-
-- สังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
+ - ทำการกดปุ่มสีดำ เพื่อให้ทำการอัพโหลดได้
+ - เมื่อโปรแกรมถูกอัพโหลดเสร็จสิ้น โปรแกรมจะทำงานโดยการตรวจสอบที่ port 0 ว่ามี input มาหรือไม่
+    - ถ้า input เป็น 1 ไฟจะติดที่ port 2
+    - ถ้า input เป็น 0 ไฟจะไม่ติด
+- โดยเราจะสามารถสังเกตผลลัพธ์ที่แสดงผลผ่านคอมพิวเตอร์
   - พิมพ์ pio device monitor
-    - PATTANI แสดงถึง ตัวแปรcountที่ถูก impliment ทีละ1,2,3ไปเรื่อยๆ โดยแสดงผลทุก 1 วินาที
-
-![image](https://user-images.githubusercontent.com/80879966/112079578-038e5b00-8bb3-11eb-9a51-9aeab6db344d.jpg)
-
    - กดปุ่มสีแดง เพื่อทำการ reset โปรแกรม  โดยโปรแกรมจะหยุดทำงานและเริ่มนับ 1 ใหม่
-
-![image](https://user-images.githubusercontent.com/80879966/112079589-0721e200-8bb3-11eb-89ac-e9135632f920.jpg)
+ 
+6. ใช้โทรศัพท์มือถือค้นหา wifi ในกรณีที่ input เป็น 1
+   - สังเกต wifi ที่เกิดขึ้นจากการสร้าง
 
 ## การบันทึกผลการทดลอง 
-  คำสั่ง | ผลลัพธ์ที่แสดง
-  ------------ | -------------
-  src/main.cpp | ผลลัพธ์ของโปรแกรมส่วน set up & loop
-  platformio.ini | ข้อมูลใน configuration file
-  pio run -t upload | รันข้อมูลในตัวอย่าง
-  pio device monitor | PATTANIที่เพิ่มขึ้นใน 1 วินาที
-  การกดปุ่มสีดำ | โปรแกรมถูกโหลด
-  การกดปุ่มสีแดง | โปรแกรมถูกรีเซ็ต
+  จากการทดลองได้ลองทำการสอดแทรก
   
 ## อภิปรายผลการทดลอง 
 สรุป วิจาร
