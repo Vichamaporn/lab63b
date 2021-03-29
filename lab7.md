@@ -8,7 +8,7 @@
 ## อุปกรณ์ที่ใช้
 1. CPU
 2. adapter
-3. sensorแสง
+3. หลอด LED เปล่งแสง
 4. microcontroller ESP-01
 5. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
 6. wifi ที่ต้องการเชื่อมกับ microcontroller
@@ -16,7 +16,9 @@
 ## แหล่งข้อมูลเพื่อการศึกษา
 - หาที่อยู่ IP adress 
   - https://www.sony.co.th/th/electronics/support/articles/00022321
-  - ![image](https://user-images.githubusercontent.com/80879966/112862419-f0621a80-90df-11eb-8075-2d66230fb73b.jpg)
+
+![image](https://user-images.githubusercontent.com/80879966/112862419-f0621a80-90df-11eb-8075-2d66230fb73b.jpg)
+
 - คลิปวิดิโอจากแลปต่างๆ
   - แลป 1 https://www.youtube.com/watch?v=NLIUsWLEpmg
   - แลป 2 https://www.youtube.com/watch?v=yBjab0UNuB8
@@ -164,7 +166,7 @@ monitor_speed = 115200
    - สังเกต wifi ที่เกิดขึ้นจากการสร้าง
 
 ## การบันทึกผลการทดลอง 
-  จากการทดลองได้ลองทำการสอดแทรก
+  จากการทดลองได้ลองทำการปรับเปลี่ยนcode programจากเดิม โดยข้อมูลที่เปลี่ยนโดยสำคัญคือชื่อและรหัสผ่านของwifi ที่อยู่ไอพี,gateway รวมไปถึง subnet ให้เป็นที่อยู่ปัจจุบันที่อยู่ โดยทำการค้นหาในcontrol panel ซึ่งจริงๆแล้วสามารถทำได้อีกวิธีผ่านการเข้า comman prompt และพิมพ์ว่า IPCONFIG ข้อมูลที่ต้องการก็จะขึ้นมาเช่นกัน ซึ่งโครงสร้างเกี่ยวกับโค้ดในการสร้างwifi จากแลป5,6 นอกจากนี้ยังได้ทำการแทรกหลอด LED เปล่งแสงผ่านการเชื่อมต่อ port ต่างๆที่ได้นำความรู้จากแลปที 4 
   
 ## อภิปรายผลการทดลอง 
 สรุป วิจาร
