@@ -6,11 +6,18 @@
 3. เพื่อการเขียน
 
 ## อุปกรณ์ที่ใช้
-1. microcontroller ESP-01 ที่ประกอบไปด้วย CPU เสาอากาศสำหรับ WIFI
-2. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
+1. CPU
+2. adapter
+3. sensorแสง
+4. หลอด LED เปล่งแสง
+5. microcontroller ESP-01
+6. อุปกรณ์เชื่อมต่อ USB เข้าไปยัง serial
+7. wifi ที่ต้องการเชื่อมกับ microcontroller
 
 ## แหล่งข้อมูลเพื่อการศึกษา
-
+- หาที่อยู่ IP adress 
+  - https://www.sony.co.th/th/electronics/support/articles/00022321
+  - ![image](https://user-images.githubusercontent.com/80879966/112862419-f0621a80-90df-11eb-8075-2d66230fb73b.jpg)
 
 ## วิธีการทำการทดลอง
 1. เขียนโปรแกรมบน microcontroller โดยทำการเสียบ microcontroller เข้าทาง serial port ของ USB 
@@ -23,47 +30,33 @@
 - พิมพ์ cd pattani เพื่อไปยังโฟลเดอร์
 - แสดงโฟลเดอร์ ซึ่งมีโปรแกรมตัวอย่าง 9 โปรแกรม
   - ไปที่ตัวอย่างที่ 7
-    - พิมพ์ cd 07_Calculating 
+    - พิมพ์ cd 07_Sensor-wifi
     - พิมพ์ vi src/main.cpp
 
-3. แสดงผลโปรแกรม โดยมี 15 บรรทัด 2 ส่วน
-- set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
-- ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
+3. ดู source code program 
+- พิมพ์ vi src/main.cpp
+  - const char* ssid = "EELAB-0058"; บรรทัดนี้ หมายถึง ชื่อ wifi
+  - const char* password = "vichamaporn"; บรรทัดนี้ หมายถึง รหัสผ่าน wifi
+  - IPAddress local_ip(172, 20, 10, 14); บรรทัดนี้ หมายถึง IP address
+  - IPAddress gateway(172, 20, 10, 1); บรรทัดนี้ หมายถึง Default gateway
+  - IPAddress subnet(255, 255, 255, 244); บรรทัดนี้ หมายถึง Subnet Mask
+  - set up 1 ครั้ง โดยการ set up serial port ที่ความเร็ว 115200
+  - ใน loop แสดงให้เห็นถึงการวนไปเรื่อยๆ ในบรรทัดต่างๆ ประกอบด้วย
   - cnt++ หมายถึง การนับเพิ่มเรื่อยๆ 
   - Serial.printf("PATTANI :%d\n",cnt) แทนคำสั่ง การแสดงผลตัวแปลcountออกมา
   - delay(1000) หมายถึง ช่วงเวลา 1000 ms หรือ 1 วินาที
- 
-```javascript
-#include <Arduino.h>
-
-int cnt = 0;
-
-void setup()
-{
-	Serial.begin(115200);
-}
-
-void loop()
-{
-	cnt++;
-	Serial.printf("PATTANI :%d\n",cnt);
-	delay(1000);
-}
-```
-3. ดู source code program 
-- พิมพ์ vi src/main.cpp
-
+  - 
 ```javascript
 #include <ESP8266WiFi.h>
 //#include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-const char* ssid = "MY-ESP8266";
-const char* password = "choompol";
+const char* ssid = "EELAB-0058";
+const char* password = "vichamaporn";
 
-IPAddress local_ip(192, 168, 1, 1);
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 255, 0);
+IPAddress local_ip(172, 20, 10, 14);
+IPAddress gateway(172, 20, 10, 1);
+IPAddress subnet(255, 255, 255, 244);
 
 ESP8266WebServer server(80);
 
@@ -74,10 +67,10 @@ void setup(void){
 
 	WiFi.softAP(ssid, password);
 	WiFi.softAPConfig(local_ip, gateway, subnet);
-	delay(100);
+	delay(1000);
 
 	server.onNotFound([]() {
-		server.send(404, "text/plain", "Path Not Found");
+		server.send(404, "text/plain", "ERROR! Path Not Found");
 	});
 
 	server.on("/", []() {
@@ -124,7 +117,7 @@ monitor_speed = 115200
   - upload_port แสดงถึง portที่ใช้ติดต่อ 
     - ในกรณีนี้เป็น windows จึงแสดงว่า COM3 (หรือCOM4)
 
-5.อัพโหลดโปรแกรม 01_Serial Monitor เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
+5.อัพโหลดโปรแกรม 07_Sensor-wifi เข้าไปยัง microcontroller โดยใช้คำสั่ง upload
 - พิมพ์ pio run -t upload
 - ในขณะที่ program กำลังรันข้อมูล เพื่อให้ microcontroller รับโปรแกรมใหม่เข้าไป
   - กดปุ่มสีดำ เพื่อทำให้เกิดการ load 
